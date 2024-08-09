@@ -1,0 +1,29 @@
+{
+    "automation": {
+        "_id": "66a723285f9ef4cf18ae2ea3",
+        "name": "git_sync",
+        "active": false,
+        "data": {
+            "prev_actions": [],
+            "next_actions": [],
+            "actions": [],
+            "trigger": {
+                "sampleDataType": "curl",
+                "sampleData": "",
+                "type": "WebHook"
+            }
+        },
+        "updated_by": "brijesh@studio.com",
+        "updated_at": "2024-07-29T05:06:06.643Z",
+        "created_by": "brijesh@studio.com",
+        "created_at": "2024-07-29T05:05:44.283Z"
+    },
+    "apiDetails": [],
+    "managedList": {
+        "database": [],
+        "fileStorage": []
+    },
+    "onprem_version": "4.0.0",
+    "isAutomationJSON": true,
+    "version": "0.0.2"
+}
