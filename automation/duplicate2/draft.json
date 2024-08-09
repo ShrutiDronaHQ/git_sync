@@ -1,0 +1,161 @@
+{
+    "automation": {
+        "name": "git_sync",
+        "data": {
+            "prev_actions": [],
+            "next_actions": [
+                "RjHLUCTFi4it8LM8X"
+            ],
+            "actions": [
+                {
+                    "id": "RjHLUCTFi4it8LM8X",
+                    "type": "CALLSERVICE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "TestAPI",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [
+                        {
+                            "key": "op",
+                            "value": "output",
+                            "select_first": true,
+                            "default_output": "{}"
+                        }
+                    ],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100001,
+                    "sub_cat_id": 100001,
+                    "environment_config": {
+                        "env_1": "account_81907839_1722252959458",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "rawResponse": {
+                        "userId": 1,
+                        "id": 1,
+                        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+                        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                    },
+                    "next_actions": [
+                        "RtT3k6Tc7icqci3r9"
+                    ],
+                    "prev_actions": []
+                },
+                {
+                    "id": "RtT3k6Tc7icqci3r9",
+                    "type": "CALLSERVICE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "TestAPI_1",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [
+                        {
+                            "key": "op",
+                            "value": "output",
+                            "select_first": true,
+                            "default_output": "{}"
+                        }
+                    ],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100001,
+                    "sub_cat_id": 100001,
+                    "environment_config": {
+                        "env_1": "account_81907839_1722252959458",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "rawResponse": {
+                        "userId": 1,
+                        "id": 1,
+                        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+                        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                    },
+                    "next_actions": [],
+                    "prev_actions": [
+                        "RjHLUCTFi4it8LM8X"
+                    ]
+                }
+            ],
+            "trigger": {
+                "sampleDataType": "curl",
+                "sampleData": "",
+                "type": "WebHook"
+            }
+        },
+        "updated_by": "brijesh@studio.com",
+        "updated_at": "2024-08-09T12:46:15.755Z",
+        "created_by": "brijesh@studio.com",
+        "created_at": "2024-07-29T05:05:44.283Z"
+    },
+    "apiDetails": [
+        {
+            "cat_id": 100001,
+            "channel_id": 2,
+            "cat_icon": "./Images/dblogos/restapi.png",
+            "cat_name": "shailendraApi",
+            "sub_cat_list": [
+                {
+                    "category_id": 100001,
+                    "channel_id": 2,
+                    "sub_category_id": 100001,
+                    "bindable": true,
+                    "dynamic_variables": "[]",
+                    "failure": {
+                        "content": "",
+                        "Header": []
+                    },
+                    "failureCondition": "[]",
+                    "name": "TestAPI",
+                    "plugin_id": 0,
+                    "preselectfields": "[]",
+                    "preselectvariables": "[]",
+                    "proxy": true,
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "body": {
+                            "mode": "application/x-www-form-urlencoded",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "https://jsonplaceholder.typicode.com/posts/1",
+                            "protocol": "https",
+                            "query": [],
+                            "param": []
+                        },
+                        "account_id": null,
+                        "description": "",
+                        "remove_empty_keys": false,
+                        "skip_uri_component_encoding": false,
+                        "request_timeout": 0
+                    },
+                    "response": {
+                        "success": "true",
+                        "ContentType": "application/json; charset=utf-8",
+                        "content": "",
+                        "StatusCode": 200,
+                        "Headers": [],
+                        "StatusDescription": "OK"
+                    }
+                }
+            ]
+        }
+    ],
+    "managedList": {
+        "database": [],
+        "fileStorage": []
+    },
+    "onprem_version": "4.0.0",
+    "isAutomationJSON": true,
+    "version": "0.0.2"
+}
