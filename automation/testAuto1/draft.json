@@ -1,0 +1,298 @@
+{
+    "automation": {
+        "_id": "66a87842eb917f671d492950",
+        "name": "testAuto1",
+        "active": false,
+        "data": {
+            "prev_actions": [],
+            "next_actions": [
+                "R24Xme5aTUAUZjU1b"
+            ],
+            "actions": [
+                {
+                    "type": "CONDITIONALBRANCH",
+                    "name": "CONDITIONALBRANCH",
+                    "id": "R24Xme5aTUAUZjU1b",
+                    "branches": [
+                        {
+                            "id": "Ruuxy7T4niE4CxdxH",
+                            "branch_name": "branch_1",
+                            "branch_condition": "",
+                            "actions": []
+                        },
+                        {
+                            "id": "RiqP2XkrlFzCdKBdq",
+                            "branch_name": "branch_2",
+                            "branch_condition": "",
+                            "actions": []
+                        }
+                    ],
+                    "branch_count": 0,
+                    "next_actions": [
+                        "RhxH2ZFjczZFfpMsP"
+                    ],
+                    "prev_actions": [],
+                    "lastActionId": [],
+                    "firstActionId": []
+                },
+                {
+                    "type": "CONDITIONALBRANCH",
+                    "name": "CONDITIONALBRANCH",
+                    "id": "RhxH2ZFjczZFfpMsP",
+                    "branches": [
+                        {
+                            "id": "RudDl0ZpgsxvXJRdm",
+                            "branch_name": "branch_1",
+                            "branch_condition": "{{1}}",
+                            "actions": [
+                                {
+                                    "id": "RRxibfq2KpLJ5VWn5",
+                                    "type": "ITERATETASKS",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "ITERATETASKS",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {
+                                        "ctrlData": {
+                                            "key": "ctrlData",
+                                            "value": "5",
+                                            "name": "5",
+                                            "label": "Enter Count/Array  Enter Count/Array",
+                                            "isField": false,
+                                            "isPreselect": false,
+                                            "fieldValueType": "manual",
+                                            "data_type": "single_line_text",
+                                            "isDynamic": false,
+                                            "isFile": "",
+                                            "editor_type": "JSEditor",
+                                            "evaluateValue": true
+                                        }
+                                    },
+                                    "outputs": [
+                                        {
+                                            "key": "INDEX",
+                                            "value": "INDEX",
+                                            "select_first": false,
+                                            "default_output": 1
+                                        },
+                                        {
+                                            "key": "VALUE",
+                                            "value": "VALUE",
+                                            "select_first": false,
+                                            "default_output": ""
+                                        }
+                                    ],
+                                    "dual_output_action": false,
+                                    "next_actions": [
+                                        "RYNJ1LVHV3LseNeMU"
+                                    ],
+                                    "prev_actions": [
+                                        "RhxH2ZFjczZFfpMsP"
+                                    ],
+                                    "actions": [
+                                        {
+                                            "id": "Rk72iD2Qw85ttn6Xs",
+                                            "type": "JSCODE",
+                                            "execution_condition_variable_with_name": "",
+                                            "execution_condition_variable": "",
+                                            "unique_name": "JSCODE_2",
+                                            "logging_variable_with_name": "",
+                                            "logging_variable": "",
+                                            "fields": {},
+                                            "outputs": [],
+                                            "dual_output_action": false,
+                                            "jscode_params": {
+                                                "dhq_variableList": [],
+                                                "dhq_processingCode": ""
+                                            },
+                                            "rawResponse": {},
+                                            "next_actions": [
+                                                "end_iterate_task"
+                                            ],
+                                            "prev_actions": [
+                                                "RRxibfq2KpLJ5VWn5"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "branch_condition_name": "{{1}}"
+                        },
+                        {
+                            "id": "R247SLZv2ZUqeBeTL",
+                            "branch_name": "branch_2",
+                            "branch_condition": "{{0}}",
+                            "actions": [],
+                            "branch_condition_name": "{{0}}"
+                        },
+                        {
+                            "id": "RWPVUTAPBqGBCnsWS",
+                            "branch_name": "New Branch",
+                            "branch_condition": "",
+                            "actions": [
+                                {
+                                    "id": "RDuN6u6BFCYwahhrv",
+                                    "type": "JSCODE",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "JSCODE",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {},
+                                    "outputs": [],
+                                    "dual_output_action": false,
+                                    "jscode_params": {
+                                        "dhq_variableList": [],
+                                        "dhq_processingCode": ""
+                                    },
+                                    "rawResponse": {},
+                                    "next_actions": [
+                                        "RYNJ1LVHV3LseNeMU"
+                                    ],
+                                    "prev_actions": [
+                                        "RhxH2ZFjczZFfpMsP"
+                                    ]
+                                }
+                            ],
+                            "branch_condition_name": ""
+                        },
+                        {
+                            "id": "RMnWiBofrTWXO5K1F",
+                            "branch_name": "New Branch",
+                            "branch_condition": "",
+                            "actions": [
+                                {
+                                    "id": "RO83UmlkZvBrMPbYG",
+                                    "type": "HTTPRESPONSE",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "HTTPRESPONSE",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {
+                                        "statusCode": {
+                                            "key": "statusCode",
+                                            "value": "200",
+                                            "name": "200",
+                                            "label": "Status code  Status code",
+                                            "isField": false,
+                                            "isPreselect": false,
+                                            "fieldValueType": "manual",
+                                            "data_type": "single_line_text",
+                                            "isDynamic": false,
+                                            "isFile": "",
+                                            "editor_type": "JSEditor",
+                                            "evaluateValue": true
+                                        },
+                                        "responseBody": {
+                                            "key": "responseBody",
+                                            "value": "{\n  \"id\":2\n}",
+                                            "name": "{\n  \"id\":2\n}",
+                                            "label": "Response body  Response body",
+                                            "isField": false,
+                                            "isPreselect": false,
+                                            "fieldValueType": "manual",
+                                            "data_type": "object",
+                                            "isDynamic": false,
+                                            "isFile": "",
+                                            "editor_type": "JSEditor",
+                                            "evaluateValue": true
+                                        }
+                                    },
+                                    "outputs": [
+                                        {
+                                            "key": "MESSAGE",
+                                            "value": "MESSAGE",
+                                            "isDefault": true,
+                                            "default_output": ""
+                                        },
+                                        {
+                                            "key": "STATUSCODE",
+                                            "value": "STATUSCODE",
+                                            "isDefault": true,
+                                            "default_output": 200
+                                        }
+                                    ],
+                                    "dual_output_action": false,
+                                    "next_actions": [
+                                        "RYNJ1LVHV3LseNeMU"
+                                    ],
+                                    "prev_actions": [
+                                        "RhxH2ZFjczZFfpMsP"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "RXUaRoQwSQ4c2xkCB",
+                            "branch_name": "New Branch",
+                            "branch_condition": "",
+                            "actions": []
+                        }
+                    ],
+                    "branch_count": 0,
+                    "next_actions": [
+                        "RYNJ1LVHV3LseNeMU"
+                    ],
+                    "prev_actions": [],
+                    "lastActionId": [
+                        "RRxibfq2KpLJ5VWn5",
+                        "RDuN6u6BFCYwahhrv",
+                        "RO83UmlkZvBrMPbYG"
+                    ],
+                    "firstActionId": [
+                        "RRxibfq2KpLJ5VWn5",
+                        "RDuN6u6BFCYwahhrv",
+                        "RO83UmlkZvBrMPbYG"
+                    ]
+                },
+                {
+                    "type": "CONDITIONALBRANCH",
+                    "name": "CONDITIONALBRANCH",
+                    "id": "RYNJ1LVHV3LseNeMU",
+                    "branches": [
+                        {
+                            "id": "RY6UykvlPNJC1ZmTy",
+                            "branch_name": "branch_1",
+                            "branch_condition": "",
+                            "actions": []
+                        },
+                        {
+                            "id": "RFpzywVvS86A3Wl1q",
+                            "branch_name": "branch_2",
+                            "branch_condition": "",
+                            "actions": []
+                        }
+                    ],
+                    "branch_count": 0,
+                    "next_actions": [],
+                    "prev_actions": [
+                        "RRxibfq2KpLJ5VWn5",
+                        "RDuN6u6BFCYwahhrv",
+                        "RO83UmlkZvBrMPbYG"
+                    ],
+                    "lastActionId": [],
+                    "firstActionId": []
+                }
+            ],
+            "trigger": {
+                "sampleDataType": "curl",
+                "sampleData": "",
+                "type": "WebHook"
+            }
+        },
+        "updated_by": "brijesh@studio.com",
+        "updated_at": "2024-07-30T05:36:55.845Z",
+        "created_by": "brijesh@studio.com",
+        "created_at": "2024-07-30T05:21:06.099Z"
+    },
+    "apiDetails": [],
+    "managedList": {
+        "database": [],
+        "fileStorage": []
+    },
+    "onprem_version": "4.0.0",
+    "isAutomationJSON": true,
+    "version": "0.0.2"
+}
