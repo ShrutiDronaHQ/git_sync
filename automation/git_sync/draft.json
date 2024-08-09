@@ -2,7 +2,7 @@
     "automation": {
         "_id": "66a723285f9ef4cf18ae2ea3",
         "name": "git_sync",
-        "active": false,
+        "active": true,
         "data": {
             "prev_actions": [],
             "next_actions": [
@@ -43,8 +43,49 @@
                         "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
                         "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
                     },
-                    "next_actions": [],
+                    "next_actions": [
+                        "RtT3k6Tc7icqci3r9"
+                    ],
                     "prev_actions": []
+                },
+                {
+                    "id": "RtT3k6Tc7icqci3r9",
+                    "type": "CALLSERVICE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "TestAPI_1",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [
+                        {
+                            "key": "op",
+                            "value": "output",
+                            "select_first": true,
+                            "default_output": "{}"
+                        }
+                    ],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100001,
+                    "sub_cat_id": 100001,
+                    "environment_config": {
+                        "env_1": "account_81907839_1722252959458",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "rawResponse": {
+                        "userId": 1,
+                        "id": 1,
+                        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+                        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                    },
+                    "next_actions": [],
+                    "prev_actions": [
+                        "RjHLUCTFi4it8LM8X"
+                    ]
                 }
             ],
             "trigger": {
@@ -54,9 +95,11 @@
             }
         },
         "updated_by": "brijesh@studio.com",
-        "updated_at": "2024-08-09T12:35:26.840Z",
+        "updated_at": "2024-08-09T12:46:15.755Z",
         "created_by": "brijesh@studio.com",
-        "created_at": "2024-07-29T05:05:44.283Z"
+        "created_at": "2024-07-29T05:05:44.283Z",
+        "current_version": "0.0.1",
+        "latest_version": "0.0.1"
     },
     "apiDetails": [
         {
