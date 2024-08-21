@@ -152,7 +152,63 @@
                             "id": "R4NPFArgRJMbSCBez",
                             "branch_name": "branch_1",
                             "branch_condition": "",
-                            "actions": []
+                            "actions": [
+                                {
+                                    "id": "RRo8mVkYsMUxFNVYA",
+                                    "type": "CONNECTORQUERY",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "query_get_todos",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {},
+                                    "outputs": [
+                                        {
+                                            "key": "op",
+                                            "value": "output",
+                                            "select_first": false,
+                                            "default_output": {
+                                                "userId": 1,
+                                                "id": 1,
+                                                "title": "delectus aut autem",
+                                                "completed": false
+                                            }
+                                        }
+                                    ],
+                                    "dual_output_action": true,
+                                    "actions_on_positive": [],
+                                    "actions_on_negative": [],
+                                    "cat_id": 100001,
+                                    "sub_cat_id": 100002,
+                                    "environment_config": {
+                                        "env_1": "account_72440970_1724240729709",
+                                        "env_2": "",
+                                        "env_3": ""
+                                    },
+                                    "test_values": [],
+                                    "request": {
+                                        "method": "GET",
+                                        "header": [],
+                                        "url": {
+                                            "raw": "https://jsonplaceholder.typicode.com/todos/1",
+                                            "query": [],
+                                            "param": [],
+                                            "protocol": "https"
+                                        },
+                                        "remove_empty_keys": false
+                                    },
+                                    "rawResponse": {
+                                        "userId": 1,
+                                        "id": 1,
+                                        "title": "delectus aut autem",
+                                        "completed": false
+                                    },
+                                    "next_actions": [],
+                                    "prev_actions": [
+                                        "RlSYKYA42cEz6i5oB"
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "id": "RU0hhIWT8uwwgjKK8",
@@ -238,9 +294,11 @@
                         "RpHEGTrAqOuJac5Bt"
                     ],
                     "lastActionId": [
+                        "RRo8mVkYsMUxFNVYA",
                         "RR8aXW35gFUYnhAgp"
                     ],
                     "firstActionId": [
+                        "RRo8mVkYsMUxFNVYA",
                         "RR8aXW35gFUYnhAgp"
                     ]
                 }
@@ -252,7 +310,7 @@
             }
         },
         "updated_by": "brijesh@studio.com",
-        "updated_at": "2024-08-21T11:45:49.766Z",
+        "updated_at": "2024-08-21T11:46:56.925Z",
         "created_by": "brijesh@studio.com",
         "created_at": "2024-08-21T11:09:44.043Z"
     },
@@ -306,6 +364,45 @@
                         "Headers": [],
                         "StatusDescription": "OK"
                     }
+                },
+                {
+                    "category_id": 100001,
+                    "channel_id": 2,
+                    "sub_category_id": 100002,
+                    "bindable": true,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "query_get_todos_RRo8mVkYsMUxFNVYA",
+                    "plugin_id": 73,
+                    "preselectfields": [],
+                    "proxy": false,
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "https://jsonplaceholder.typicode.com/todos/1",
+                            "query": [],
+                            "param": [],
+                            "protocol": "https"
+                        },
+                        "remove_empty_keys": false
+                    },
+                    "response": {
+                        "Headers": [],
+                        "success": "true",
+                        "ContentType": "application/json; charset=utf-8",
+                        "content": "",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK"
+                    },
+                    "action_type": "Query"
                 }
             ]
         }
