@@ -4,10 +4,17 @@
         "name": "gitSync",
         "active": false,
         "data": {
-            "actions": []
+            "prev_actions": [],
+            "next_actions": [],
+            "actions": [],
+            "trigger": {
+                "sampleDataType": "curl",
+                "sampleData": "",
+                "type": "WebHook"
+            }
         },
         "updated_by": "brijesh@studio.com",
-        "updated_at": "2024-08-21T11:09:44.043Z",
+        "updated_at": "2024-08-21T11:10:24.966Z",
         "created_by": "brijesh@studio.com",
         "created_at": "2024-08-21T11:09:44.043Z"
     },
