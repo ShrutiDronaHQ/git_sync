@@ -1,5 +1,6 @@
 {
     "automation": {
+        "_id": "66c5d45ffe29bbf665ef2cc8",
         "name": "git_sync_from_github",
         "active": false,
         "data": {
@@ -178,7 +179,7 @@
                                     "actions_on_positive": [],
                                     "actions_on_negative": [],
                                     "cat_id": 100001,
-                                    "sub_cat_id": 100002,
+                                    "sub_cat_id": 100003,
                                     "environment_config": {
                                         "env_1": "account_72440970_1724240729709",
                                         "env_2": "",
@@ -309,9 +310,9 @@
             }
         },
         "updated_by": "brijesh@studio.com",
-        "updated_at": "2024-08-21T11:46:56.925Z",
+        "updated_at": "2024-08-21T11:49:51.979Z",
         "created_by": "brijesh@studio.com",
-        "created_at": "2024-08-21T11:09:44.043Z"
+        "created_at": "2024-08-21T11:49:51.861Z"
     },
     "apiDetails": [
         {
@@ -367,7 +368,7 @@
                 {
                     "category_id": 100001,
                     "channel_id": 2,
-                    "sub_category_id": 100002,
+                    "sub_category_id": 100003,
                     "bindable": true,
                     "failure": {
                         "Header": [],
@@ -378,7 +379,7 @@
                         "success": false
                     },
                     "failureCondition": "[]",
-                    "name": "query_get_todos_RRo8mVkYsMUxFNVYA",
+                    "name": "query_get_todos_RSMhc9E0G",
                     "plugin_id": 73,
                     "preselectfields": [],
                     "proxy": false,
