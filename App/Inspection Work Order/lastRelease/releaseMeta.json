@@ -1,10 +1,10 @@
 {
   "PackageWithNewControls": true,
-  "releaseNotes": "nb",
+  "releaseNotes": "po",
   "usedFieldsName": "text,list,dhq_grouped_menu,dhq_dropdown,dateandtimepicker,map,textarea,Paragraph,Button1,dhq_select_bar,back_next,signature_pad",
   "metadata": "{}",
   "env": "prod",
-  "newVersion": "0.0.3",
+  "newVersion": "0.0.4",
   "pluginId": "18",
   "subCatList": "",
   "multistepAuthUsedInAppList": "[]",
