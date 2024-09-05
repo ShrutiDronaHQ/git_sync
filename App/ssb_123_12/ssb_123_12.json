@@ -1,7 +1,7 @@
 {
   "isDownloadedJSON": true,
   "appJSON": {
-    "template_name": "ssb_123_1",
+    "template_name": "ssb_123_12",
     "description": "sdfe",
     "group_id": "[]",
     "plugin_id": "1871",
@@ -12,7 +12,7 @@
     "embed": "{\"action\":\"\"}",
     "is_show_case_app": 0,
     "meta": "",
-    "icon_url": "http://localhost:8080/filerepository/files/DRONA5_Team2/content/app/icon/lyC3Jt53Ze.png",
+    "icon_url": "http://localhost:8080/filerepository/files/DRONA5_Team2/content/app/icon/aD3L9BTL8f.png",
     "features": "[]",
     "_engVer": "1.1.0",
     "is_premium": false,
