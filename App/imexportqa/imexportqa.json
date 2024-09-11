@@ -1,7 +1,7 @@
 {
   "isDownloadedJSON": true,
   "appJSON": {
-    "template_name": "imexport",
+    "template_name": "imexportqa",
     "description": "im/export testvh",
     "group_id": "[18]",
     "plugin_id": "56670",
