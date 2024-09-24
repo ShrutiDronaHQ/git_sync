@@ -1,8 +1,8 @@
 {
   "isDownloadedJSON": true,
   "appJSON": {
-    "template_name": "newapp1",
-    "description": "desc",
+    "template_name": "newapp1234",
+    "description": "gitSynTest",
     "group_id": "[]",
     "plugin_id": "36",
     "action": "add",
@@ -12,7 +12,7 @@
     "embed": "{\"action\":\"\"}",
     "is_show_case_app": 0,
     "meta": "",
-    "icon_url": "https://test-selfhosted.dronahq.ai/filerepository/files/DRONA5_Team2/content/app/icon/ktpoYnOJ1F.png",
+    "icon_url": "https://test-selfhosted.dronahq.ai/filerepository/files/DRONA5_Team2/content/app/icon/QwnjQaIk1O.png",
     "features": "[]",
     "_engVer": "1.1.0",
     "is_premium": false,
