@@ -1,0 +1,57 @@
+{
+    "automation": {
+        "_id": "66e80a5ce9af9651a787c756",
+        "name": "import",
+        "active": true,
+        "data": {
+            "prev_actions": [],
+            "next_actions": [
+                "RzutshVHPfDxtm4ez"
+            ],
+            "actions": [
+                {
+                    "id": "RzutshVHPfDxtm4ez",
+                    "type": "JSCODE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "JSCODE",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": false,
+                    "jscode_params": {
+                        "dhq_variableList": [],
+                        "dhq_processingCode": ""
+                    },
+                    "rawResponse": {},
+                    "next_actions": [],
+                    "prev_actions": []
+                }
+            ],
+            "trigger": {
+                "interval_type": "interval",
+                "timezone": "Asia/Calcutta",
+                "repeat_every": {
+                    "type": "hour",
+                    "minute": "0"
+                },
+                "type": "Scheduler"
+            }
+        },
+        "updated_by": "brijesh@studio.com",
+        "updated_at": "2024-09-16T10:37:48.885Z",
+        "created_by": "brijesh@studio.com",
+        "created_at": "2024-09-16T10:37:16.894Z",
+        "current_version": "0.0.1",
+        "latest_version": "0.0.1"
+    },
+    "apiDetails": [],
+    "managedList": {
+        "database": [],
+        "fileStorage": []
+    },
+    "onprem_version": "3.3.0-edge",
+    "isAutomationJSON": true,
+    "version": "0.0.2"
+}
