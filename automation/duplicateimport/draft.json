@@ -1,0 +1,156 @@
+{
+    "automation": {
+        "_id": "66f6931c0ee2cffb8d0464ee",
+        "name": "duplicateimport",
+        "active": false,
+        "data": {
+            "prev_actions": [],
+            "next_actions": [
+                "RQFH8N8QO7WvLCvz6"
+            ],
+            "actions": [
+                {
+                    "id": "RQFH8N8QO7WvLCvz6",
+                    "type": "JSCODE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "JSCODE_1",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": false,
+                    "jscode_params": {
+                        "dhq_variableList": [],
+                        "dhq_processingCode": ""
+                    },
+                    "rawResponse": {},
+                    "next_actions": [
+                        "RnDYqv0fNHur4lvib"
+                    ],
+                    "prev_actions": []
+                },
+                {
+                    "type": "CONDITIONALBRANCH",
+                    "name": "CONDITIONALBRANCH",
+                    "id": "RnDYqv0fNHur4lvib",
+                    "branches": [
+                        {
+                            "id": "RIJE9jlHtrsP10Rox",
+                            "branch_name": "branch_1",
+                            "branch_condition": "",
+                            "actions": [
+                                {
+                                    "id": "RmPAsBEKW4mCRu2pE",
+                                    "type": "JSCODE",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "JSCODE_2",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {},
+                                    "outputs": [],
+                                    "dual_output_action": false,
+                                    "jscode_params": {
+                                        "dhq_variableList": [],
+                                        "dhq_processingCode": ""
+                                    },
+                                    "rawResponse": {},
+                                    "next_actions": [
+                                        "RzutshVHPfDxtm4ez"
+                                    ],
+                                    "prev_actions": [
+                                        "RnDYqv0fNHur4lvib"
+                                    ]
+                                },
+                                {
+                                    "id": "RzutshVHPfDxtm4ez",
+                                    "type": "JSCODE",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "JSCODE",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {},
+                                    "outputs": [],
+                                    "dual_output_action": false,
+                                    "jscode_params": {
+                                        "dhq_variableList": [],
+                                        "dhq_processingCode": ""
+                                    },
+                                    "rawResponse": {},
+                                    "next_actions": [],
+                                    "prev_actions": [
+                                        "RmPAsBEKW4mCRu2pE"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Rw1e8PWzoRlCOxY4U",
+                            "branch_name": "branch_2",
+                            "branch_condition": "",
+                            "actions": [
+                                {
+                                    "id": "RDbhRrOaGp0Tx2imh",
+                                    "type": "JSCODE",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "JSCODE_3",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {},
+                                    "outputs": [],
+                                    "dual_output_action": false,
+                                    "jscode_params": {
+                                        "dhq_variableList": [],
+                                        "dhq_processingCode": ""
+                                    },
+                                    "rawResponse": {},
+                                    "next_actions": [],
+                                    "prev_actions": [
+                                        "RnDYqv0fNHur4lvib"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "branch_count": 0,
+                    "next_actions": [],
+                    "prev_actions": [
+                        "RQFH8N8QO7WvLCvz6"
+                    ],
+                    "lastActionId": [
+                        "RzutshVHPfDxtm4ez",
+                        "RDbhRrOaGp0Tx2imh"
+                    ],
+                    "firstActionId": [
+                        "RmPAsBEKW4mCRu2pE",
+                        "RDbhRrOaGp0Tx2imh"
+                    ]
+                }
+            ],
+            "trigger": {
+                "interval_type": "interval",
+                "timezone": "Asia/Calcutta",
+                "repeat_every": {
+                    "type": "hour",
+                    "minute": "0"
+                },
+                "type": "Scheduler"
+            }
+        },
+        "updated_by": "brijesh@studio.com",
+        "updated_at": "2024-09-27T11:12:28.386Z",
+        "created_by": "brijesh@studio.com",
+        "created_at": "2024-09-27T11:12:28.361Z"
+    },
+    "apiDetails": [],
+    "managedList": {
+        "database": [],
+        "fileStorage": []
+    },
+    "onprem_version": "3.3.0-edge",
+    "isAutomationJSON": true,
+    "version": "0.0.2"
+}
