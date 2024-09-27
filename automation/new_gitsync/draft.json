@@ -1,0 +1,154 @@
+{
+    "automation": {
+        "_id": "66f2656a0fe677020ed5cb21",
+        "name": "new_gitsync",
+        "active": true,
+        "data": {
+            "prev_actions": [],
+            "next_actions": [
+                "REgFDrNPsDOe7kcyR"
+            ],
+            "actions": [
+                {
+                    "id": "REgFDrNPsDOe7kcyR",
+                    "type": "CONNECTORQUERY",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "Query",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100002,
+                    "sub_cat_id": 100010,
+                    "environment_config": {
+                        "env_1": "account_62597596_1725002770639",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author",
+                            "variables": [],
+                            "mode": "db_query"
+                        },
+                        "remove_empty_keys": false
+                    },
+                    "rawResponse": {
+                        "result": {
+                            "rows": [
+                                {
+                                    "author_id": 1,
+                                    "name": "Ames T",
+                                    "last_name": "Ames",
+                                    "initials": "T",
+                                    "orcid": "",
+                                    "synonyms": ""
+                                }
+                            ]
+                        }
+                    },
+                    "next_actions": [
+                        "RUodVhd8ZqyK8wwOQ"
+                    ],
+                    "prev_actions": []
+                },
+                {
+                    "id": "RUodVhd8ZqyK8wwOQ",
+                    "type": "JSCODE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "JSCODE",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": false,
+                    "jscode_params": {
+                        "dhq_variableList": [],
+                        "dhq_processingCode": ""
+                    },
+                    "rawResponse": {},
+                    "next_actions": [],
+                    "prev_actions": [
+                        "REgFDrNPsDOe7kcyR"
+                    ]
+                }
+            ],
+            "trigger": {
+                "interval_type": "interval",
+                "timezone": "Asia/Calcutta",
+                "repeat_every": {
+                    "type": "hour",
+                    "minute": "0"
+                },
+                "type": "Scheduler"
+            }
+        },
+        "updated_by": "brijesh@studio.com",
+        "updated_at": "2024-09-27T06:27:05.267Z",
+        "created_by": "brijesh@studio.com",
+        "created_at": "2024-09-24T07:08:26.395Z",
+        "current_version": "0.0.1",
+        "latest_version": "0.0.1"
+    },
+    "apiDetails": [
+        {
+            "cat_id": 100002,
+            "channel_id": 2,
+            "cat_icon": "./Images/dblogos/mysql.png",
+            "cat_name": "mihir_mysql",
+            "sub_cat_list": [
+                {
+                    "category_id": 100002,
+                    "channel_id": 2,
+                    "sub_category_id": 100010,
+                    "bindable": true,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "Query_REgFDrNPsDOe7kcyR",
+                    "plugin_id": 73,
+                    "preselectfields": [],
+                    "proxy": false,
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author",
+                            "variables": [],
+                            "mode": "db_query"
+                        },
+                        "remove_empty_keys": false
+                    },
+                    "response": {
+                        "success": "true",
+                        "content": "",
+                        "ContentType": "application/json; charset=utf-8",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK",
+                        "Headers": []
+                    },
+                    "action_type": "Query"
+                }
+            ]
+        }
+    ],
+    "managedList": {
+        "database": [],
+        "fileStorage": []
+    },
+    "onprem_version": "3.3.0-edge",
+    "isAutomationJSON": true,
+    "version": "0.0.2"
+}
