@@ -1,0 +1,1078 @@
+{
+    "automation": {
+        "_id": "66f8091d1e837383021c4ac4",
+        "name": "im_Test",
+        "active": false,
+        "data": {
+            "prev_actions": [],
+            "next_actions": [
+                "RQFH8N8QO7WvLCvz6"
+            ],
+            "actions": [
+                {
+                    "id": "RQFH8N8QO7WvLCvz6",
+                    "type": "JSCODE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "JSCODE_1",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": false,
+                    "jscode_params": {
+                        "dhq_variableList": [],
+                        "dhq_processingCode": ""
+                    },
+                    "rawResponse": {},
+                    "next_actions": [
+                        "RnDYqv0fNHur4lvib"
+                    ],
+                    "prev_actions": []
+                },
+                {
+                    "type": "CONDITIONALBRANCH",
+                    "name": "CONDITIONALBRANCH",
+                    "id": "RnDYqv0fNHur4lvib",
+                    "branches": [
+                        {
+                            "id": "RIJE9jlHtrsP10Rox",
+                            "branch_name": "branch_1",
+                            "branch_condition": "",
+                            "actions": [
+                                {
+                                    "id": "RmPAsBEKW4mCRu2pE",
+                                    "type": "JSCODE",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "JSCODE_2",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {},
+                                    "outputs": [],
+                                    "dual_output_action": false,
+                                    "jscode_params": {
+                                        "dhq_variableList": [],
+                                        "dhq_processingCode": ""
+                                    },
+                                    "rawResponse": {},
+                                    "next_actions": [
+                                        "RzutshVHPfDxtm4ez"
+                                    ],
+                                    "prev_actions": [
+                                        "RnDYqv0fNHur4lvib"
+                                    ]
+                                },
+                                {
+                                    "id": "RzutshVHPfDxtm4ez",
+                                    "type": "JSCODE",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "JSCODE",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {},
+                                    "outputs": [],
+                                    "dual_output_action": false,
+                                    "jscode_params": {
+                                        "dhq_variableList": [],
+                                        "dhq_processingCode": ""
+                                    },
+                                    "rawResponse": {},
+                                    "next_actions": [
+                                        "R5u057Llw2iFaeqIw"
+                                    ],
+                                    "prev_actions": [
+                                        "RmPAsBEKW4mCRu2pE"
+                                    ]
+                                },
+                                {
+                                    "id": "R5u057Llw2iFaeqIw",
+                                    "type": "CONNECTORQUERY",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "Query",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {},
+                                    "outputs": [],
+                                    "dual_output_action": true,
+                                    "actions_on_positive": [],
+                                    "actions_on_negative": [],
+                                    "cat_id": 100002,
+                                    "sub_cat_id": 100031,
+                                    "environment_config": {
+                                        "env_1": "account_62597596_1725002770639",
+                                        "env_2": "",
+                                        "env_3": ""
+                                    },
+                                    "test_values": [],
+                                    "request": {
+                                        "method": "DB_QUERY",
+                                        "body": {
+                                            "raw": "SELECT * from author",
+                                            "variables": [],
+                                            "mode": "db_query"
+                                        },
+                                        "remove_empty_keys": false
+                                    },
+                                    "rawResponse": {
+                                        "result": {
+                                            "rows": [
+                                                {
+                                                    "author_id": 1,
+                                                    "name": "Ames T",
+                                                    "last_name": "Ames",
+                                                    "initials": "T",
+                                                    "orcid": "",
+                                                    "synonyms": ""
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "next_actions": [
+                                        "Ra2WflWRuTZf7LOql"
+                                    ],
+                                    "prev_actions": [
+                                        "RzutshVHPfDxtm4ez"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Rw1e8PWzoRlCOxY4U",
+                            "branch_name": "branch_2",
+                            "branch_condition": "",
+                            "actions": [
+                                {
+                                    "id": "RDbhRrOaGp0Tx2imh",
+                                    "type": "JSCODE",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "JSCODE_3",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {},
+                                    "outputs": [],
+                                    "dual_output_action": false,
+                                    "jscode_params": {
+                                        "dhq_variableList": [],
+                                        "dhq_processingCode": ""
+                                    },
+                                    "rawResponse": {},
+                                    "next_actions": [
+                                        "R7LOaeVT93HHQEGUn"
+                                    ],
+                                    "prev_actions": [
+                                        "RnDYqv0fNHur4lvib"
+                                    ]
+                                },
+                                {
+                                    "id": "R7LOaeVT93HHQEGUn",
+                                    "type": "CALLSERVICE",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "getall",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {},
+                                    "outputs": [],
+                                    "dual_output_action": true,
+                                    "actions_on_positive": [],
+                                    "actions_on_negative": [],
+                                    "cat_id": 100002,
+                                    "sub_cat_id": 100004,
+                                    "environment_config": {
+                                        "env_1": "account_62597596_1725002770639",
+                                        "env_2": "",
+                                        "env_3": ""
+                                    },
+                                    "test_values": [],
+                                    "next_actions": [
+                                        "RzVcoND7ms921ACuE"
+                                    ],
+                                    "prev_actions": [
+                                        "RDbhRrOaGp0Tx2imh"
+                                    ]
+                                },
+                                {
+                                    "id": "RzVcoND7ms921ACuE",
+                                    "type": "CALLSERVICE",
+                                    "execution_condition_variable_with_name": "",
+                                    "execution_condition_variable": "",
+                                    "unique_name": "limit",
+                                    "logging_variable_with_name": "",
+                                    "logging_variable": "",
+                                    "fields": {},
+                                    "outputs": [],
+                                    "dual_output_action": true,
+                                    "actions_on_positive": [],
+                                    "actions_on_negative": [],
+                                    "cat_id": 100002,
+                                    "sub_cat_id": 100012,
+                                    "environment_config": {
+                                        "env_1": "account_62597596_1725002770639",
+                                        "env_2": "",
+                                        "env_3": ""
+                                    },
+                                    "test_values": [],
+                                    "rawResponse": {
+                                        "result": {
+                                            "rows": [
+                                                {
+                                                    "author_id": 1,
+                                                    "name": "Ames T",
+                                                    "last_name": "Ames",
+                                                    "initials": "T",
+                                                    "orcid": "",
+                                                    "synonyms": ""
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "next_actions": [
+                                        "Ra2WflWRuTZf7LOql"
+                                    ],
+                                    "prev_actions": [
+                                        "R7LOaeVT93HHQEGUn"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "branch_count": 0,
+                    "next_actions": [
+                        "Ra2WflWRuTZf7LOql"
+                    ],
+                    "prev_actions": [
+                        "RQFH8N8QO7WvLCvz6"
+                    ],
+                    "lastActionId": [
+                        "R5u057Llw2iFaeqIw",
+                        "RzVcoND7ms921ACuE"
+                    ],
+                    "firstActionId": [
+                        "RmPAsBEKW4mCRu2pE",
+                        "RDbhRrOaGp0Tx2imh"
+                    ]
+                },
+                {
+                    "id": "Ra2WflWRuTZf7LOql",
+                    "type": "CALLSERVICE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "TestAPI",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100001,
+                    "sub_cat_id": 100001,
+                    "environment_config": {
+                        "env_1": "account_72440970_1724240729709",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "next_actions": [
+                        "RFIvngiDWDOIw65h8"
+                    ],
+                    "prev_actions": [
+                        "R5u057Llw2iFaeqIw",
+                        "RzVcoND7ms921ACuE"
+                    ]
+                },
+                {
+                    "id": "RFIvngiDWDOIw65h8",
+                    "type": "CALLSERVICE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "qa1",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100002,
+                    "sub_cat_id": 100013,
+                    "environment_config": {
+                        "env_1": "account_62597596_1725002770639",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "rawResponse": {
+                        "result": {
+                            "rows": [
+                                {
+                                    "author_id": 1,
+                                    "name": "Ames T",
+                                    "last_name": "Ames",
+                                    "initials": "T",
+                                    "orcid": "",
+                                    "synonyms": ""
+                                }
+                            ]
+                        }
+                    },
+                    "next_actions": [
+                        "RSYHKs3g7sKwt27lm"
+                    ],
+                    "prev_actions": [
+                        "Ra2WflWRuTZf7LOql"
+                    ]
+                },
+                {
+                    "id": "RSYHKs3g7sKwt27lm",
+                    "type": "CALLSERVICE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "qa1_2",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100002,
+                    "sub_cat_id": 100013,
+                    "environment_config": {
+                        "env_1": "account_62597596_1725002770639",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "next_actions": [
+                        "Ry6cVz5cEvWMyzCwL"
+                    ],
+                    "prev_actions": [
+                        "RFIvngiDWDOIw65h8"
+                    ]
+                },
+                {
+                    "id": "Ry6cVz5cEvWMyzCwL",
+                    "type": "CALLSERVICE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "qa4",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100002,
+                    "sub_cat_id": 100017,
+                    "environment_config": {
+                        "env_1": "account_62597596_1725002770639",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "rawResponse": {
+                        "result": {
+                            "rows": [
+                                {
+                                    "clan_acc": "CL00001",
+                                    "id": "tRNA",
+                                    "previous_id": null,
+                                    "description": "tRNA clan",
+                                    "author": "Gardner PP",
+                                    "comment": "The tRNA clan contains the RNA families tRNA and tmRNA. Homology between these families has been established in the published literature [1-5].",
+                                    "created": "2014-06-02T15:17:41.000Z",
+                                    "updated": "2014-06-02T15:18:18.000Z"
+                                }
+                            ]
+                        }
+                    },
+                    "next_actions": [
+                        "RHbBB1d8qeZ6e0ZFg"
+                    ],
+                    "prev_actions": [
+                        "RSYHKs3g7sKwt27lm"
+                    ]
+                },
+                {
+                    "id": "RHbBB1d8qeZ6e0ZFg",
+                    "type": "CALLSERVICE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "forGitsyncTestSelectAllWithWhereClause",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100002,
+                    "sub_cat_id": 100018,
+                    "environment_config": {
+                        "env_1": "account_62597596_1725002770639",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "rawResponse": {
+                        "result": {
+                            "rows": [
+                                {
+                                    "author_id": 10,
+                                    "name": "Brown C",
+                                    "last_name": "Brown",
+                                    "initials": "C",
+                                    "orcid": "",
+                                    "synonyms": ""
+                                }
+                            ]
+                        }
+                    },
+                    "next_actions": [
+                        "R3xAV0X6wpKFMmbRa"
+                    ],
+                    "prev_actions": [
+                        "Ry6cVz5cEvWMyzCwL"
+                    ]
+                },
+                {
+                    "id": "R3xAV0X6wpKFMmbRa",
+                    "type": "CONNECTORQUERY",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "Query_2",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100002,
+                    "sub_cat_id": 100032,
+                    "environment_config": {
+                        "env_1": "account_62597596_1725002770639",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author\nWHERE author_id = 4;",
+                            "variables": [],
+                            "mode": "db_query"
+                        },
+                        "remove_empty_keys": false
+                    },
+                    "rawResponse": {
+                        "result": {
+                            "rows": [
+                                {
+                                    "author_id": 4,
+                                    "name": "Barquist LE",
+                                    "last_name": "Barquist",
+                                    "initials": "LE",
+                                    "orcid": "0000-0003-4732-2667",
+                                    "synonyms": ""
+                                }
+                            ]
+                        }
+                    },
+                    "next_actions": [
+                        "Rqa9i9SqwzCAjk0sA"
+                    ],
+                    "prev_actions": [
+                        "RHbBB1d8qeZ6e0ZFg"
+                    ]
+                },
+                {
+                    "id": "Rqa9i9SqwzCAjk0sA",
+                    "type": "CONNECTORQUERY",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "Query_3",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100002,
+                    "sub_cat_id": 100033,
+                    "environment_config": {
+                        "env_1": "account_62597596_1725002770639",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author\nWHERE author_id = 6",
+                            "variables": [],
+                            "mode": "db_query"
+                        },
+                        "remove_empty_keys": false
+                    },
+                    "rawResponse": {
+                        "result": {
+                            "rows": [
+                                {
+                                    "author_id": 6,
+                                    "name": "Bateman A",
+                                    "last_name": "Bateman",
+                                    "initials": "A",
+                                    "orcid": "0000-0002-6982-4660",
+                                    "synonyms": ""
+                                }
+                            ]
+                        }
+                    },
+                    "next_actions": [
+                        "R1ypsukDnIMDC0m57"
+                    ],
+                    "prev_actions": [
+                        "R3xAV0X6wpKFMmbRa"
+                    ]
+                },
+                {
+                    "id": "R1ypsukDnIMDC0m57",
+                    "type": "CONNECTORQUERY",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "Query_4",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100002,
+                    "sub_cat_id": 100034,
+                    "environment_config": {
+                        "env_1": "account_62597596_1725002770639",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author\nWHERE initials = \"T\"",
+                            "variables": [],
+                            "mode": "db_query"
+                        },
+                        "remove_empty_keys": false
+                    },
+                    "rawResponse": {
+                        "result": {
+                            "rows": [
+                                {
+                                    "author_id": 1,
+                                    "name": "Ames T",
+                                    "last_name": "Ames",
+                                    "initials": "T",
+                                    "orcid": "",
+                                    "synonyms": ""
+                                }
+                            ]
+                        }
+                    },
+                    "next_actions": [],
+                    "prev_actions": [
+                        "Rqa9i9SqwzCAjk0sA"
+                    ]
+                }
+            ],
+            "trigger": {
+                "interval_type": "interval",
+                "timezone": "Asia/Calcutta",
+                "repeat_every": {
+                    "type": "hour",
+                    "minute": "0"
+                },
+                "type": "Scheduler"
+            }
+        },
+        "updated_by": "brijesh@studio.com",
+        "updated_at": "2024-09-28T13:48:13.812Z",
+        "created_by": "brijesh@studio.com",
+        "created_at": "2024-09-28T13:48:13.259Z"
+    },
+    "apiDetails": [
+        {
+            "cat_id": 100001,
+            "channel_id": 2,
+            "cat_icon": "./Images/dblogos/restapi.png",
+            "cat_name": "Raj_Jsonplaceholder",
+            "sub_cat_list": [
+                {
+                    "category_id": 100001,
+                    "channel_id": 2,
+                    "sub_category_id": 100001,
+                    "bindable": true,
+                    "dynamic_variables": "[]",
+                    "failure": {
+                        "content": "",
+                        "Header": []
+                    },
+                    "failureCondition": "[]",
+                    "name": "TestAPI",
+                    "plugin_id": 0,
+                    "preselectfields": "[]",
+                    "preselectvariables": "[]",
+                    "proxy": true,
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "body": {
+                            "mode": "application/x-www-form-urlencoded",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "https://jsonplaceholder.typicode.com/todos/1",
+                            "protocol": "https",
+                            "query": [],
+                            "param": []
+                        },
+                        "account_id": null,
+                        "description": "",
+                        "remove_empty_keys": false,
+                        "skip_uri_component_encoding": false,
+                        "request_timeout": 0
+                    },
+                    "response": {
+                        "success": "true",
+                        "ContentType": "application/json; charset=utf-8",
+                        "content": "",
+                        "StatusCode": 200,
+                        "Headers": [],
+                        "StatusDescription": "OK"
+                    }
+                }
+            ]
+        },
+        {
+            "cat_id": 100002,
+            "channel_id": 2,
+            "cat_icon": "./Images/dblogos/mysql.png",
+            "cat_name": "mihir_mysql",
+            "sub_cat_list": [
+                {
+                    "category_id": 100002,
+                    "channel_id": 2,
+                    "sub_category_id": 100004,
+                    "bindable": true,
+                    "dynamic_variables": null,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "getall",
+                    "plugin_id": 0,
+                    "preselectfields": "[]",
+                    "preselectvariables": "[]",
+                    "proxy": false,
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author",
+                            "variables": [],
+                            "mode": "db_query",
+                            "queryEditor": ""
+                        },
+                        "header": [],
+                        "url": {
+                            "raw": "",
+                            "protocol": "",
+                            "query": [],
+                            "param": []
+                        },
+                        "account_id": "account_62597596_1725002770639",
+                        "description": "",
+                        "remove_empty_keys": false,
+                        "skip_uri_component_encoding": false,
+                        "request_timeout": 0
+                    },
+                    "response": {
+                        "success": "true",
+                        "content": "",
+                        "ContentType": "application/json; charset=utf-8",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK",
+                        "Headers": []
+                    }
+                },
+                {
+                    "category_id": 100002,
+                    "channel_id": 2,
+                    "sub_category_id": 100012,
+                    "bindable": true,
+                    "dynamic_variables": null,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "limit",
+                    "plugin_id": 0,
+                    "preselectfields": "[]",
+                    "preselectvariables": "[]",
+                    "proxy": false,
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author LIMIT 10",
+                            "variables": [],
+                            "mode": "db_query",
+                            "queryEditor": ""
+                        },
+                        "header": [],
+                        "url": {
+                            "raw": "",
+                            "protocol": "",
+                            "query": [],
+                            "param": []
+                        },
+                        "account_id": "account_62597596_1725002770639",
+                        "description": "",
+                        "remove_empty_keys": false,
+                        "skip_uri_component_encoding": false,
+                        "request_timeout": 0
+                    },
+                    "response": {
+                        "success": "true",
+                        "content": "",
+                        "ContentType": "application/json; charset=utf-8",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK",
+                        "Headers": []
+                    }
+                },
+                {
+                    "category_id": 100002,
+                    "channel_id": 2,
+                    "sub_category_id": 100013,
+                    "bindable": true,
+                    "dynamic_variables": null,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "qa1",
+                    "plugin_id": 0,
+                    "preselectfields": "[]",
+                    "preselectvariables": "[]",
+                    "proxy": false,
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author \nWHERE initials= \"T\"",
+                            "variables": [],
+                            "mode": "db_query",
+                            "queryEditor": ""
+                        },
+                        "header": [],
+                        "url": {
+                            "raw": "",
+                            "protocol": "",
+                            "query": [],
+                            "param": []
+                        },
+                        "account_id": "account_62597596_1725002770639",
+                        "description": "",
+                        "remove_empty_keys": false,
+                        "skip_uri_component_encoding": false,
+                        "request_timeout": 0
+                    },
+                    "response": {
+                        "success": "true",
+                        "content": "",
+                        "ContentType": "application/json; charset=utf-8",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK",
+                        "Headers": []
+                    }
+                },
+                {
+                    "category_id": 100002,
+                    "channel_id": 2,
+                    "sub_category_id": 100017,
+                    "bindable": true,
+                    "dynamic_variables": null,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "qa4",
+                    "plugin_id": 0,
+                    "preselectfields": "[]",
+                    "preselectvariables": "[]",
+                    "proxy": false,
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from clan",
+                            "variables": [],
+                            "mode": "db_query",
+                            "queryEditor": ""
+                        },
+                        "header": [],
+                        "url": {
+                            "raw": "",
+                            "protocol": "",
+                            "query": [],
+                            "param": []
+                        },
+                        "account_id": "account_62597596_1725002770639",
+                        "description": "",
+                        "remove_empty_keys": false,
+                        "skip_uri_component_encoding": false,
+                        "request_timeout": 0
+                    },
+                    "response": {
+                        "success": "true",
+                        "content": "",
+                        "ContentType": "application/json; charset=utf-8",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK",
+                        "Headers": []
+                    }
+                },
+                {
+                    "category_id": 100002,
+                    "channel_id": 2,
+                    "sub_category_id": 100018,
+                    "bindable": true,
+                    "dynamic_variables": null,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "forGitsyncTestSelectAllWithWhereClause",
+                    "plugin_id": 0,
+                    "preselectfields": "[]",
+                    "preselectvariables": "[]",
+                    "proxy": false,
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author\nWHERE author_id =10; ",
+                            "variables": [],
+                            "mode": "db_query",
+                            "queryEditor": ""
+                        },
+                        "header": [],
+                        "url": {
+                            "raw": "",
+                            "protocol": "",
+                            "query": [],
+                            "param": []
+                        },
+                        "account_id": "account_62597596_1725002770639",
+                        "description": "",
+                        "remove_empty_keys": false,
+                        "skip_uri_component_encoding": false,
+                        "request_timeout": 0
+                    },
+                    "response": {
+                        "success": "true",
+                        "content": "",
+                        "ContentType": "application/json; charset=utf-8",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK",
+                        "Headers": []
+                    }
+                },
+                {
+                    "category_id": 100002,
+                    "channel_id": 2,
+                    "sub_category_id": 100031,
+                    "bindable": true,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "Query_RsRSkIp3j",
+                    "plugin_id": 73,
+                    "preselectfields": [],
+                    "proxy": false,
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author",
+                            "variables": [],
+                            "mode": "db_query"
+                        },
+                        "remove_empty_keys": false
+                    },
+                    "response": {
+                        "success": "true",
+                        "content": "",
+                        "ContentType": "application/json; charset=utf-8",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK",
+                        "Headers": []
+                    },
+                    "action_type": "Query"
+                },
+                {
+                    "category_id": 100002,
+                    "channel_id": 2,
+                    "sub_category_id": 100032,
+                    "bindable": true,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "Query_2_RdjRCYbIV",
+                    "plugin_id": 73,
+                    "preselectfields": [],
+                    "proxy": false,
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author\nWHERE author_id = 4;",
+                            "variables": [],
+                            "mode": "db_query"
+                        },
+                        "remove_empty_keys": false
+                    },
+                    "response": {
+                        "success": "true",
+                        "content": "",
+                        "ContentType": "application/json; charset=utf-8",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK",
+                        "Headers": []
+                    },
+                    "action_type": "Query"
+                },
+                {
+                    "category_id": 100002,
+                    "channel_id": 2,
+                    "sub_category_id": 100033,
+                    "bindable": true,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "Query_3_RNHjWlyVF",
+                    "plugin_id": 73,
+                    "preselectfields": [],
+                    "proxy": false,
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author\nWHERE author_id = 6",
+                            "variables": [],
+                            "mode": "db_query"
+                        },
+                        "remove_empty_keys": false
+                    },
+                    "response": {
+                        "success": "true",
+                        "content": "",
+                        "ContentType": "application/json; charset=utf-8",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK",
+                        "Headers": []
+                    },
+                    "action_type": "Query"
+                },
+                {
+                    "category_id": 100002,
+                    "channel_id": 2,
+                    "sub_category_id": 100034,
+                    "bindable": true,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "Query_4_RiuD0B05J",
+                    "plugin_id": 73,
+                    "preselectfields": [],
+                    "proxy": false,
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author\nWHERE initials = \"T\"",
+                            "variables": [],
+                            "mode": "db_query"
+                        },
+                        "remove_empty_keys": false
+                    },
+                    "response": {
+                        "success": "true",
+                        "content": "",
+                        "ContentType": "application/json; charset=utf-8",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK",
+                        "Headers": []
+                    },
+                    "action_type": "Query"
+                }
+            ]
+        }
+    ],
+    "managedList": {
+        "database": [],
+        "fileStorage": []
+    },
+    "onprem_version": "3.3.0-edge",
+    "isAutomationJSON": true,
+    "version": "0.0.2"
+}
