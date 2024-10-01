@@ -1,0 +1,201 @@
+{
+    "automation": {
+        "_id": "66fb88611e837383021c4d02",
+        "name": "testgitQQQQ",
+        "active": true,
+        "data": {
+            "prev_actions": [],
+            "next_actions": [
+                "RkMIN2RyplYRBLwX3"
+            ],
+            "actions": [
+                {
+                    "id": "RkMIN2RyplYRBLwX3",
+                    "type": "CALLSERVICE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "getall",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100002,
+                    "sub_cat_id": 100004,
+                    "environment_config": {
+                        "env_1": "account_62597596_1725002770639",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "next_actions": [
+                        "RxX2vYcgXZAfzH78p"
+                    ],
+                    "prev_actions": []
+                },
+                {
+                    "id": "RxX2vYcgXZAfzH78p",
+                    "type": "CALLSERVICE",
+                    "execution_condition_variable_with_name": "",
+                    "execution_condition_variable": "",
+                    "unique_name": "TestAPI",
+                    "logging_variable_with_name": "",
+                    "logging_variable": "",
+                    "fields": {},
+                    "outputs": [],
+                    "dual_output_action": true,
+                    "actions_on_positive": [],
+                    "actions_on_negative": [],
+                    "cat_id": 100001,
+                    "sub_cat_id": 100001,
+                    "environment_config": {
+                        "env_1": "account_72440970_1724240729709",
+                        "env_2": "",
+                        "env_3": ""
+                    },
+                    "test_values": [],
+                    "next_actions": [],
+                    "prev_actions": [
+                        "RkMIN2RyplYRBLwX3"
+                    ]
+                }
+            ],
+            "trigger": {
+                "interval_type": "interval",
+                "timezone": "Asia/Calcutta",
+                "repeat_every": {
+                    "type": "hour",
+                    "minute": "0"
+                },
+                "type": "Scheduler"
+            }
+        },
+        "updated_by": "brijesh@studio.com",
+        "updated_at": "2024-10-01T05:29:55.596Z",
+        "created_by": "brijesh@studio.com",
+        "created_at": "2024-10-01T05:28:01.509Z",
+        "current_version": "0.0.4",
+        "latest_version": "0.0.4"
+    },
+    "apiDetails": [
+        {
+            "cat_id": 100001,
+            "channel_id": 2,
+            "cat_icon": "./Images/dblogos/restapi.png",
+            "cat_name": "Raj_Jsonplaceholder",
+            "sub_cat_list": [
+                {
+                    "category_id": 100001,
+                    "channel_id": 2,
+                    "sub_category_id": 100001,
+                    "bindable": true,
+                    "dynamic_variables": "[]",
+                    "failure": {
+                        "content": "",
+                        "Header": []
+                    },
+                    "failureCondition": "[]",
+                    "name": "TestAPI",
+                    "plugin_id": 0,
+                    "preselectfields": "[]",
+                    "preselectvariables": "[]",
+                    "proxy": true,
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "body": {
+                            "mode": "application/x-www-form-urlencoded",
+                            "formdata": []
+                        },
+                        "url": {
+                            "raw": "https://jsonplaceholder.typicode.com/todos/1",
+                            "protocol": "https",
+                            "query": [],
+                            "param": []
+                        },
+                        "account_id": null,
+                        "description": "",
+                        "remove_empty_keys": false,
+                        "skip_uri_component_encoding": false,
+                        "request_timeout": 0
+                    },
+                    "response": {
+                        "success": "true",
+                        "ContentType": "application/json; charset=utf-8",
+                        "content": "",
+                        "StatusCode": 200,
+                        "Headers": [],
+                        "StatusDescription": "OK"
+                    }
+                }
+            ]
+        },
+        {
+            "cat_id": 100002,
+            "channel_id": 2,
+            "cat_icon": "./Images/dblogos/mysql.png",
+            "cat_name": "mihir_mysql",
+            "sub_cat_list": [
+                {
+                    "category_id": 100002,
+                    "channel_id": 2,
+                    "sub_category_id": 100004,
+                    "bindable": true,
+                    "dynamic_variables": null,
+                    "failure": {
+                        "Header": [],
+                        "StatusCode": 0,
+                        "StatusDescription": "",
+                        "content": "",
+                        "dynamic_variables": [],
+                        "success": false
+                    },
+                    "failureCondition": "[]",
+                    "name": "getall",
+                    "plugin_id": 0,
+                    "preselectfields": "[]",
+                    "preselectvariables": "[]",
+                    "proxy": false,
+                    "request": {
+                        "method": "DB_QUERY",
+                        "body": {
+                            "raw": "SELECT * from author",
+                            "variables": [],
+                            "mode": "db_query",
+                            "queryEditor": ""
+                        },
+                        "header": [],
+                        "url": {
+                            "raw": "",
+                            "protocol": "",
+                            "query": [],
+                            "param": []
+                        },
+                        "account_id": "account_62597596_1725002770639",
+                        "description": "",
+                        "remove_empty_keys": false,
+                        "skip_uri_component_encoding": false,
+                        "request_timeout": 0
+                    },
+                    "response": {
+                        "success": "true",
+                        "content": "",
+                        "ContentType": "application/json; charset=utf-8",
+                        "StatusCode": 200,
+                        "StatusDescription": "OK",
+                        "Headers": []
+                    }
+                }
+            ]
+        }
+    ],
+    "managedList": {
+        "database": [],
+        "fileStorage": []
+    },
+    "onprem_version": "3.3.0-edge",
+    "isAutomationJSON": true,
+    "version": "0.0.2"
+}
