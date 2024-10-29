@@ -1,46 +1,5 @@
 [
   {
-    "folder_name": "datafolder",
-    "app_names": "[\"dominoss\"]"
-  },
-  {
-    "folder_name": "RAJ",
-    "app_names": "[\"vaibhav_newtest01\", \"Xano Test\", \"gitSyncTest\"]"
-  },
-  {
-    "folder_name": "DHQ",
-    "app_names": "[\"varSubCatCheckv1\", \"test ruless\"]"
-  },
-  {
-    "folder_name": "newf",
-    "app_names": "[\"newtestappq\"]"
-  },
-  {
-    "folder_name": "test_prerna",
-    "app_names": "[\"dummy\"]"
-  },
-  {
-    "folder_name": "test_folder",
-    "app_names": "[\"test_1234554\"]"
-  },
-  {
-    "folder_name": "ghhghgh",
-    "app_names": "[\"Asdffttj\", \"yjfjfghhh1fgg\", \"nonnhoojh\"]"
-  },
-  {
-    "folder_name": "QA",
-    "app_names": "[\"testttt\", \"testttttt\"]"
-  },
-  {
-    "folder_name": "shrutidev_push",
-    "app_names": "[\"shrtui_local\"]"
-  },
-  {
-    "folder_name": "shruti_folder_local_1",
-    "app_names": "[\"shruti_temp_folder_1\"]"
-  },
-  {
-    "folder_name": "shruti_final_json_pushed",
-    "app_names": "[\"shruti_temp_folder\"]"
+  "folder_sachin_tepm":[]
   }
 ]
