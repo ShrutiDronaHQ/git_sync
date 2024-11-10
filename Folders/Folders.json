@@ -1,5 +1,5 @@
 {
-  shruti_cf_test: ["Demo"],
-  shruti_tem: [],
-  shruti_folder_git_sync: ["AutoFormGen test", "New Folder"]
+  "shruti_cf_test": ["Demo"],
+  "shruti_tem": [],
+  "shruti_folder_git_sync": ["AutoFormGen test", "New Folder"]
 }
